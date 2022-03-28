@@ -1,0 +1,22 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+    id "application"
+}
+
+group 'io.github.devrawr.snake'
+version '1.0-SNAPSHOT'
+
+application {
+    mainClassName = "io.github.devrawr.snake.Main"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation "com.github.ajalt.mordant:mordant:2.0.0-beta5"
+    implementation 'com.1stleg:jnativehook:2.0.2'
+}
