@@ -65,37 +65,5 @@ object CLIGameRenderer : Renderer
                 sleepForFps()
             }
         }
-
-//        val drawer = Array(height) {
-//            arrayOfNulls<String>(width)
-//        }
-//
-//        val player = gameData.player
-//        val parts = player.parts
-//
-//        for (part in parts)
-//        {
-//            drawer[part.y][part.x] = TextColors.cyan.bg("   ")
-//        }
-//
-//        drawer[player.head.y][player.head.x] = TextColors.brightBlue.bg("   ")
-//
-//        for (y in 0..height)
-//        {
-//            for (x in 0..width)
-//            {
-//                terminal.cursor.move {
-//                    setPosition(x, y)
-//                }
-//
-//                terminal.print(
-//                    drawer
-//                        .getOrNull(y)
-//                        ?.getOrNull(x) ?: TextColors.white.bg("   ")
-//                )
-//            }
-//
-//            println()
-//        }
     }
 }
